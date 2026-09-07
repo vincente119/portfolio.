@@ -6,11 +6,11 @@
     <title>Eze Chibueze Vincent | IT Support Specialist Portfolio</title>
     <style>
         :root {
-            --primary: #1e3a8a; /* Professional IT Dark Blue */
-            --accent: #2563eb;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --text: #334155;
+            --primary: #1e3a8a; /* IT Corporate Navy Blue */
+            --accent: #2563eb;  /* Tech Blue */
+            --dark: #0f172a;    /* Slate Dark */
+            --light: #f8fafc;   /* Soft Background */
+            --text: #334155;    /* Muted Text */
             --border: #e2e8f0;
         }
 
@@ -85,7 +85,7 @@
 
         /* Hero Section */
         .hero {
-            padding: 5rem 0;
+            padding: 4rem 0;
         }
 
         .hero h1 {
@@ -103,7 +103,7 @@
 
         .hero p {
             font-size: 1.15rem;
-            max-width: 700px;
+            max-width: 750px;
             margin-bottom: 2rem;
         }
 
@@ -128,7 +128,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #111827;
+            background-color: var(--dark);
         }
 
         .btn-secondary {
@@ -141,7 +141,7 @@
             background-color: var(--border);
         }
 
-        /* Skills Grid */
+        /* Skills Layout */
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -177,7 +177,7 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Project / Job Cards */
+        /* Cards */
         .card {
             background: white;
             padding: 2rem;
@@ -213,6 +213,15 @@
             font-style: italic;
             color: #64748b;
             margin-bottom: 1rem;
+        }
+
+        .card ul {
+            padding-left: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .card li {
+            margin-bottom: 0.4rem;
         }
 
         .metric {
@@ -253,9 +262,9 @@
         <div class="logo">Eze Chibueze Vincent</div>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">IT Experience</a></li>
-            <li><a href="#projects">Product Design</a></li>
+            <li><a href="#design">Product Design</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -264,49 +273,49 @@
         
         <!-- Hero Section -->
         <section class="hero">
-            <h1>Hi, I'm Eze Chibueze Vincent</h1>
-            <h3>IT Support Specialist & Systems Infrastructure Professional</h3>
-            <p>Detail-oriented and highly motivated IT Professional with over 3 years of experience providing technical assistance, resolving network issues, and maintaining system performance across Windows, macOS, and Linux platforms. Dedicated to minimizing business downtime and supporting end-users.</p>
+            <h1>Eze Chibueze Vincent</h1>
+            <h3>IT Support Specialist</h3>
+            <p>Detail-oriented and highly motivated IT Support Specialist with over 3 years of experience providing technical assistance, resolving user issues, and maintaining system performance across Windows, macOS, and Linux platforms. Proven ability to deliver effective end-user support and ensure IT systems run smoothly with minimal downtime.</p>
             <div class="btn-group">
-                <a href="mailto:ezevincent348@gmail.com" class="btn btn-primary">Contact Me / Hire</a>
-                <a href="https://dribbble.com" target="_blank" class="btn btn-secondary">View UX Design Work</a>
+                <a href="mailto:ezevincent348@gmail.com" class="btn btn-primary">Contact Me</a>
+                <a href="https://dribbble.com/vincente119" target="_blank" class="btn btn-secondary">View Design Work</a>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about">
             <h2>💡 Professional Profile</h2>
-            <p>I hold a <strong>B-Tech in Computer Science (Second Class Upper Division)</strong> from the Federal University of Technology, Owerri (FUTO). My career is built on ensuring enterprise networks, hardware deployment, and workstation software run flawlessly.</p>
+            <p>I hold a <strong>B-Tech in Computer Science (Second Class Upper Division)</strong> from the Federal University of Technology, Owerri (FUTO). My core focus centers around handling tier diagnostics, device deployment configurations, and safeguarding workplace computing assets from system network failures.</p>
             <br>
-            <p>Whether configuring secure remote VPN access, implementing hardware tracking systems, or reducing office infrastructure error tickets, I approach technical support with strict analytical logic. Additionally, my background in interaction design equips me with advanced communication skills to effectively train team members on modern cybersecurity practices.</p>
+            <p>Combining structural infrastructure expertise with an understanding of human interaction interfaces, I am uniquely capable of troubleshooting core software bottlenecks and smoothly educating team members on organizational digital protocols.</p>
         </section>
 
         <!-- Skills Section -->
         <section id="skills">
-            <h2>🛠 Core Technical Skills & Tools</h2>
+            <h2>🛠 Technical Skills & Tools</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h4>Systems & Network Infrastructure</h4>
+                    <h4>Systems, Networking & Hardware</h4>
                     <ul>
-                        <li><strong>Operating Systems:</strong> Windows 10/11, macOS, Linux</li>
-                        <li><strong>Networking Protocol:</strong> TCP/IP, DNS routing, Wi-Fi architectures</li>
-                        <li><strong>Remote Work Solutions:</strong> VPN deployment, remote desktop troubleshooting</li>
-                        <li><strong>Hardware Maintenance:</strong> PC/Laptop repairs, printers, operational peripherals</li>
+                        <li><strong>Operating Systems:</strong> Windows 10/11</li>
+                        <li><strong>Networking:</strong> TCP/IP, DNS, Wi-Fi troubleshooting</li>
+                        <li><strong>Hardware Infrastructure:</strong> PC/Laptop repairs, printers, operational peripherals</li>
+                        <li><strong>Standard Software:</strong> Microsoft Office Suite</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h4>Security, Software & UX Value-Adds</h4>
+                    <h4>UX & Design Value-Adds</h4>
                     <ul>
-                        <li><strong>Access Security:</strong> Account provisioning, secure password policies</li>
-                        <li><strong>Threat Prevention:</strong> User security awareness training (anti-phishing)</li>
-                        <li><strong>Productivity Apps:</strong> Advanced Microsoft Office suite workflows</li>
-                        <li><strong>Design Software:</strong> Figma, Webflow (Information Architecture mapping)</li>
+                        <li><strong>Design Tools:</strong> Figma, Webflow</li>
+                        <li><strong>UX Research:</strong> User interviews, Empathy mapping, Journey maps, Usability testing</li>
+                        <li><strong>Visual & Interaction Layouts:</strong> Sketching, Wireframing, Design Systems</li>
+                        <li><strong>UX Writing:</strong> Site mapping, Information Content Strategy</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- IT Work Experience Section -->
+        <!-- Experience Section -->
         <section id="experience">
             <h2>💼 Professional IT Experience</h2>
             
@@ -317,4 +326,5 @@
                 </div>
                 <p class="tagline">ENL Consortium</p>
                 <ul>
-                    <li>Provided exhaustive Tier 1 and Tier 2 technical diagnosis and support to 10+ users across multiple critical company departments.</li>
+                    <li>Responded to hardware and software issues for Windows-based systems.</li>
+                    <li>Configured new devices and added each device to the company network infrastructure.</li>
