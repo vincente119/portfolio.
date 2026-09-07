@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eze Chibueze Vincent | IT Support Specialist Portfolio</title>
+    <title>Eze Chibueze Vincent | Portfolio</title>
     <style>
         :root {
-            --primary: #1e3a8a; /* Corporate IT Navy Blue */
-            --accent: #2563eb;  /* Tech Blue */
-            --dark: #0f172a;    /* Slate Dark */
-            --light: #f8fafc;   /* Soft Background */
-            --text: #334155;    /* Muted Text */
+            --primary: #1e3a8a;
+            --accent: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --text: #334155;
             --border: #e2e8f0;
         }
 
@@ -28,7 +28,6 @@
             padding-top: 70px;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -58,14 +57,12 @@
             text-decoration: none;
             color: var(--text);
             font-weight: 500;
-            transition: color 0.2s;
         }
 
         nav a:hover {
             color: var(--accent);
         }
 
-        /* Container Layout */
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -73,17 +70,18 @@
         }
 
         section {
-            padding: 4rem 0;
+            padding: 3rem 0;
             border-bottom: 1px solid var(--border);
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--dark);
             margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* Hero Section */
         .hero {
             padding: 4rem 0;
         }
@@ -95,15 +93,14 @@
         }
 
         .hero h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: var(--accent);
             margin-bottom: 1.5rem;
             font-weight: 500;
         }
 
         .hero p {
-            font-size: 1.15rem;
-            max-width: 750px;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
         }
 
@@ -119,16 +116,11 @@
             text-decoration: none;
             border-radius: 6px;
             font-weight: 600;
-            transition: background 0.2s;
         }
 
         .btn-primary {
             background-color: var(--primary);
             color: white;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--dark);
         }
 
         .btn-secondary {
@@ -137,11 +129,6 @@
             border: 1px solid var(--border);
         }
 
-        .btn-secondary:hover {
-            background-color: var(--border);
-        }
-
-        /* Skills Layout */
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -163,21 +150,19 @@
 
         .skill-card h4 {
             color: var(--dark);
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--light);
-            padding-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
         }
 
         .skill-card ul {
-            list-style-type: square;
+            list-style-type: disc;
             padding-left: 1.2rem;
         }
 
         .skill-card li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
-        /* Cards */
         .card {
             background: white;
             padding: 2rem;
@@ -190,46 +175,35 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             flex-wrap: wrap;
-            gap: 0.5rem;
         }
 
-        .badge {
-            background-color: #f1f5f9;
+        .company-name {
+            font-weight: bold;
             color: var(--dark);
-            padding: 0.25rem 0.75rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
+            font-size: 1.2rem;
+        }
+
+        .job-title {
             font-weight: 600;
-        }
-
-        .badge-it {
-            background-color: #dbeafe;
             color: var(--accent);
+            margin-bottom: 0.75rem;
         }
 
-        .tagline {
-            font-style: italic;
+        .date {
             color: #64748b;
-            margin-bottom: 1rem;
+            font-size: 0.9rem;
         }
 
         .card ul {
             padding-left: 1.2rem;
-            margin-bottom: 1rem;
         }
 
         .card li {
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.5rem;
         }
 
-        .metric {
-            font-weight: bold;
-            color: #16a34a;
-        }
-
-        /* Footer */
         footer {
             background: var(--dark);
             color: white;
@@ -239,10 +213,7 @@
 
         footer h2, footer a {
             color: white;
-        }
-
-        footer a:hover {
-            color: #93c5fd;
+            text-decoration: none;
         }
 
         footer .grid {
@@ -259,12 +230,12 @@
 <body>
 
     <nav>
-        <div class="logo">Eze Chibueze Vincent</div>
+        <div class="logo">EZE CHIBUEZE VINCENT</div>
         <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">Summary</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">IT Experience</a></li>
-            <li><a href="#design">Product Design</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -273,55 +244,69 @@
         
         <!-- Hero Section -->
         <section class="hero">
-            <h1>Eze Chibueze Vincent</h1>
+            <h1>EZE CHIBUEZE VINCENT</h1>
             <h3>IT Support Specialist</h3>
-            <p>Detail-oriented and highly motivated IT Support Specialist with over 3 years of hands-on experience providing professional technical assistance, resolving intricate network challenges, and managing end-user performance environments across Windows, macOS, and Linux platforms. Dedicated to optimizing hardware workflows and ensuring enterprise infrastructure stability with minimal business downtime.</p>
-            <div class="btn-group">
-                <a href="mailto:ezevincent348@gmail.com" class="btn btn-primary">Contact Me</a>
-                <a href="https://dribbble.com" target="_blank" class="btn btn-secondary">View Design Work</a>
+            <div class="btn-group" style="margin-top: 1.5rem;">
+                <a href="mailto:ezevincent348@gmail.com" class="btn btn-primary">Get in touch</a>
+                <a href="https://dribbble.com" target="_blank" class="btn btn-secondary">View Dribbble Portfolio</a>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- Career Summary Section -->
         <section id="about">
-            <h2>💡 Professional Profile</h2>
-            <p>I hold a <strong>B-Tech in Computer Science (Second Class Upper Division)</strong> from the Federal University of Technology, Owerri (FUTO). My career roadmap combines hardware system repairs, proactive networking diagnostics, and server software patch updates to protect internal company ecosystems from standard operational failures.</p>
-            <br>
-            <p>Because my computer science education is backed by modern interaction design capabilities, I possess the advanced communication tools required to clearly train personnel, troubleshoot core cloud/VPN blockages, and handle corporate data logging securely.</p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>🛠 Technical Skills & Tools</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h4>Systems, Networking & Hardware</h4>
-                    <ul>
-                        <li><strong>Operating Systems:</strong> Windows 10/11, macOS, Linux</li>
-                        <li><strong>Networking:</strong> TCP/IP stack configuration, DNS resolution, Wi-Fi connectivity diagnostics</li>
-                        <li><strong>Hardware Infrastructure:</strong> Workstation/PC repairs, asset provisioning, printer maintenance, peripheral troubleshooting</li>
-                        <li><strong>Core Software:</strong> Microsoft Office Suite</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h4>UI/UX & Design Value-Adds</h4>
-                    <ul>
-                        <li><strong>Design Tools:</strong> Figma, Webflow</li>
-                        <li><strong>UX Research:</strong> User interviews, Empathy mapping, Journey maps, Usability testing</li>
-                        <li><strong>Visual Execution:</strong> Wireframing, interface component structures, Design Systems</li>
-                        <li><strong>Information Architecture:</strong> Content strategy planning, comprehensive site mapping</li>
-                    </ul>
-                </div>
-            </div>
+            <h2>Career Summary</h2>
+            <p>Detail-oriented and highly motivated IT Support Specialist with over 3 years of experience providing technical assistance, resolving user issues, and maintaining system performance across Windows, macOS, and Linux platforms. Proven ability to deliver effective end-user support and ensure IT systems run smoothly with minimal downtime. Strong communicator with a passion for technology and customer service.</p>
         </section>
 
         <!-- Experience Section -->
         <section id="experience">
-            <h2>💼 Professional IT Experience</h2>
+            <h2>Experience</h2>
             
-            <!-- IT ROLE 1: ENL CONSORTIUM -->
+            <!-- YOUNG SHALL GROW MOTORS -->
             <div class="card">
                 <div class="card-header">
-                    <h3>IT Support Specialist</h3>
-                    <span class="badge badge-it">January 2022 – 2024</span>
+                    <span class="company-name">Young shall grow motor</span>
+                    <span class="date">june 2018 – December 2019</span>
                 </div>
+                <div class="job-title">IT Support</div>
+                <ul>
+                    <li>Installation of GPS tracker in all young shall grow vehicles</li>
+                    <li>Monitoring of vehicle movement using a software that enable us view accurate information of all the vehicles that have GPS device.</li>
+                    <li>Registration of drivers</li>
+                    <li>Safety record (to determine the location/position of every vehicle belonging to young shall grow transport limited at every moment in time)</li>
+                </ul>
+            </div>
+
+            <!-- ENL CONSORTIUM -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="company-name">enl consortium</span>
+                    <span class="date">January 2022 – 2024</span>
+                </div>
+                <div class="job-title">IT Support Specialist</div>
+                <ul>
+                    <li>Responded to hardware and software issues for Windows-based systems</li>
+                    <li>Configured new devices and add each device to the company network</li>
+                    <li>Educated users on best practices for password management and phishing prevention</li>
+                    <li>Maintained inventory of IT equipment and software licenses</li>
+                    <li>Provided Tier 1 and Tier 2 support to 10+users across multiple departments</li>
+                    <li>Supported user onboarding/offboarding, including account setup and hardware provisioning</li>
+                    <li>Performed routine maintenance and software updates to reduce technical issues by 30%</li>
+                    <li>Collaborated with network team to troubleshoot connectivity and VPN issues</li>
+                </ul>
+            </div>
+
+            <!-- AFRIMENT -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="company-name">Afriment — Lagos, Remote</span>
+                    <span class="date">January 2025 - September 2025</span>
+                </div>
+                <div class="job-title">LEAD PRODUCT DESIGNER</div>
+                <p style="margin-bottom: 0.75rem; font-style: italic;">A company that connect tech professionals with mentors and industry leaders to develop skills, gain confidence and propel your career forward</p>
+                <ul>
+                    <li>Design a fintech app named Quickpay that enable users to create payment link, share the payment link via WhatsApp or email and then the customer makes payment using the shared link of the user/vendor.</li>
+                    <li>Mapped out Quickpay features to pain point</li>
+                    <li>Quickpay Post launched road-map priorities</li>
+                </ul>
+                <br>
