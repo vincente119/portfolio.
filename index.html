@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eze Chibueze Vincent | Portfolio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+            padding-top: 70px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-weight: 700;
+            color: var(--dark);
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--dark);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--border);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .skills-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.2rem; }
+            nav ul { display: none; }
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .skill-card h4 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 0.5rem;
+        }
+
+        .skill-card ul {
+            list-style-type: square;
+            padding-left: 1.2rem;
+        }
+
+        .skill-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Project / Job Cards */
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            background-color: #eff6ff;
+            color: var(--primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #64748b;
+            margin-bottom: 1rem;
+        }
+
+        .metric {
+            font-weight: bold;
+            color: #16a34a;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        footer h2, footer a {
+            color: white;
+        }
+
+        footer a:hover {
+            color: #93c5fd;
+        }
+
+        footer .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            footer .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Eze Chibueze Vincent</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">UX Case Study</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Hi, I'm Eze Chibueze Vincent</h1>
+            <h3>IT Support Specialist & UX/Product Designer</h3>
+            <p>I blend over 3 years of analytical system infrastructure experience with user-centric product design. Based in Lagos, Nigeria. Available for Remote, Hybrid, or Full-Time opportunities.</p>
+            <div class="btn-group">
+                <a href="mailto:ezevincent348@gmail.com" class="btn btn-primary">Hire Me</a>
+                <a href="https://dribbble.com" target="_blank" class="btn btn-secondary">View Dribbble Portfolio</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>💡 About Me</h2>
+            <p>I hold a <strong>B-Tech in Computer Science (Second Class Upper Division)</strong> from the Federal University of Technology, Owerri (FUTO). With a proven background troubleshooting corporate network backbones and managing devices, I know how complex hardware and software systems tick from the inside out.</p>
+            <br>
+            <p>My work transitions across deep technical support and high-impact digital Product Design (UX/UI). This cross-disciplinary approach allows me to engineer tools that are robust, highly functional, and designed intuitively around human behavior.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>🛠 Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>IT Support & Infrastructure</h4>
+                    <ul>
+                        <li>Windows 10/11, macOS, Linux</li>
+                        <li>TCP/IP, DNS, Wi-Fi & VPN Troubleshooting</li>
+                        <li>PC/Laptop Repairs, Printers & Peripherals</li>
+                        <li>Hardware Provisioning & Asset Inventory Management</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Product Design & UX Research</h4>
+                    <ul>
+                        <li>Figma, Webflow</li>
+                        <li>Visual Design (Wireframing, Sketching, Design Systems)</li>
+                        <li>UX Research (Interviews, Empathy/Journey Mapping, Usability Testing)</li>
+                        <li>UX Writing (Content Strategy, Site Mapping)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>🎨 Featured UX Case Study</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Quickpay Fintech Application</h3>
+                    <span class="badge">Lead Product Designer</span>
+                </div>
+                <p class="tagline">Afriment (Jan 2025 – Sept 2025)</p>
+                <p>Designed <strong>Quickpay</strong>, a mobile fintech application that enables users to create a unique billing payment link, directly share the link via WhatsApp or email, and seamlessly collect payments from vendors/customers.</p>
+                <br>
+                <ul>
+                    <li>Mapped out Quickpay application feature frameworks explicitly back to customer core pain points.</li>
+                    <li>Developed wireframes, workflows, and clean interactive mockups using Figma.</li>
+                    <li>Formulated post-launch product roadmaps to guide engineering team priority phases.</li>
+                </ul>
+                <br>
+                <a href="https://dribbble.com" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">View Quickpay Layout on Dribbble ↗</a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>💼 Professional Work Experience</h2>
+            
+            <div class="card">
